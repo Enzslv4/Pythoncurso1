@@ -1,0 +1,3 @@
+var = 'algo'
+
+print(var)
