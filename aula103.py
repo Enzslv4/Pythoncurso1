@@ -6,9 +6,11 @@
 
 def createFunction(func):
     def intern(*args, **kwargs):
+        print('Vou te decorar.')
         for arg in args:
             isString(arg)
             result = func(*args, **kwargs)
+            print('Decorei.') 
             return result
     return intern
 
